@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+table, th, td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+</style>
+</head>
+
+<body onload="newTable()">
+
+<script>
+
+function newTable(){
+	var rows = 10
+	var cols = 10
+	var t = document.createElement("table");
+	document.body.appendChild(t);
+
+  	for(i = 1; i<=rows; i++){
+         var row = tbl.insertRow();
+    	  for(j = 1; j<=cols; j++){          
+            var cell1 = row.insertCell();          
+            cell1.innerHTML = i*cols + j;
+	    }
+	}
+
+}
+</script>
+</body>
+</html>
